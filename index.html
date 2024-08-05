@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#featured-jobs">Featured Jobs</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main>
+        <section id="about">
+            <h2>EduVista</h2>
+            <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
+            <p id="about-description">We are a leading e-learning platform dedicated to providing quality education to learners around the world.Each course includes comprehensive materials,excercises,and real-world projects to ensure a thorough understanding of the subject matter. </p>
+        </section>
+
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <div class="course-grid">
+                <div class="course-item"><img src="course1.jpeg" alt="Course 1"></div>
+                <div class="course-item"><img src="course2.jpeg" alt="Course 2"></div>
+                <div class="course-item"><img src="course3.jpeg" alt="Course 3"></div>
+                <div class="course-item"><img src="course4.jpeg" alt="Course 4"></div>
+                <div class="course-item"><img src="course5.jpeg" alt="Course 5"></div>
+                <div class="course-item"><img src="course6.jpeg" alt="Course 6"></div>
+                <div class="course-item"><img src="course7.jpeg" alt="Course 7"></div>
+                <div class="course-item"><img src="course8.jpeg" alt="Course 8"></div>
+            </div>
+        </section>
+
+        <section id="featured-jobs">
+            <h2>Featured Jobs</h2>
+            <div class="job-logos">
+                <div class="job-logo"><img src="job1.jpeg" alt="Job 1"></div>
+                <div class="job-logo"><img src="job2.jpeg" alt="Job 2"></div>
+                <div class="job-logo"><img src="job3.jpeg" alt="Job 3"></div>
+                <div class="job-logo"><img src="job4.jpeg" alt="Job 4"></div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Others Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="person1.jpeg" alt="John Doe">
+                    <p>Great platform!</p>
+                    <h4>John Doe</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="person2.jpeg" alt="Jane Smith">
+                    <p> Helpful courses.</p>
+                    <h4>Jane Smith</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="person3.jpeg" alt="Alice Johnson">
+                    <p> Recommend!</p>
+                    <h4>Alice Johnson</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="person4.jpeg" alt="Bob Brown">
+                    <p>Amazing learning experience.</p>
+                    <h4>Bob Brown</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="person5.jpeg" alt="Charlie Davis">
+                    <p>Excellent resources.</p>
+                    <h4>Charlie Davis</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+                <p id="form-message"></p>
+            </form>
+        </section>
+
+        <!-- Slider Section -->
+        <div class="slider">
+            <div class="slides">
+                <img src="slide1.jpeg" alt="Slide 1">
+                <img src="slide2.jpeg" alt="Slide 2">
+                <img src="slide3.jpeg" alt="Slide 3">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <!-- Accordion Section -->
+         <h4>EduVista</h4>
+        <div class="accordion">
+            <button class="accordion-button">About our courses</button>
+            <div class="About our Course">
+                <p>Our platform offers a diverse range of corses designed to cater to various learning needs.Whether you're interested in programming,graphic design,digital marketing,or personal development,we have carefully curated courses taught by industry experts.</p>
+            </div>
+            <button class="accordion-button">Enrollment Process</button>
+            <div class="accordion">
+                <p>Enrolling in our courses is simple and straightforward.Start by browsing our course catalog to find our course that matches your interests and career goals.Once you've selected a course,click on the'Enroll' button to proceed.</p>
+            </div>
+            <button class="accordion-button">Certification</button>
+            <div class="accordion">
+                <p>Upon sucessful completion of our courses,you'll receive a certificate thst recognizes your achievement and the skills you've acquired.Our certifications are designed to enhance your resume and demonstrate your expertise to potential employers.</p>
+            </div>
+        </div>
+
+        <!-- Tabs Section -->
+        <div class="tabs">
+            <button class="tab-button" onclick="openTab('tab1')">Tab 1</button>
+            <button class="tab-button" onclick="openTab('tab2')">Tab 2</button>
+            <button class="tab-button" onclick="openTab('tab3')">Tab 3</button>
+            <div id="tab1" class="tab-content">
+                <p>E-learning has revolutionized data science education, providing a flexible and accessible platform for learners worldwide. This approach breaks geographical barriers, allowing students to access top-tier courses and resources from renowned institutions and industry experts. Unlike traditional classrooms, e-learning offers personalized learning experiences, enabling students to progress at their own pace and revisit complex topics as needed.
+
+A data science course delivered through e-learning platforms equips students with essential skills in areas such as statistical analysis, machine learning, data visualization, and big data technologies. These courses often include interactive modules, video lectures, and hands-on projects, ensuring practical understanding and application of concepts. Learners benefit from a wealth of online resources, including digital libraries, forums, and peer networks, fostering a collaborative and supportive learning environment.</p>
+            </div>
+            <div id="tab2" class="tab-content">
+                <p>A machine learning course provides a comprehensive introduction to the field of artificial intelligence, focusing on the development of algorithms that enable computers to learn from data and make predictions. Students learn key concepts such as supervised and unsupervised learning, neural networks, and deep learning. Practical applications, including data preprocessing, model training, and evaluation, are covered using programming languages like Python and tools like TensorFlow and scikit-learn. The course equips learners with the skills to build, test, and deploy machine learning models, preparing them for careers in data science, AI, and related fields.</p>
+            </div>
+            <div id="tab3" class="tab-content">
+                <p>A cybersecurity course provides essential knowledge and skills to protect computer systems and networks from cyber threats. Students learn about various types of cyberattacks, including malware, phishing, and hacking, and how to defend against them. The curriculum covers key topics such as network security, cryptography, risk management, and ethical hacking. Practical labs and projects allow students to apply security measures and respond to simulated cyber incidents. This course prepares individuals for careers in cybersecurity, equipping them with the expertise needed to secure sensitive data, ensure privacy, and maintain the integrity of information systems in various industries.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Learning Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
